@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fish!</string>
+    <string name="app_name">Fish</string>
     <string name="description">Description</string>
     <string name="select_date">Select Date</string>
     <string name="save">Save</string>
