@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">fish!</string>
+    <string name="description">Description</string>
+    <string name="select_date">Select Date</string>
+    <string name="save">Save</string>
+    <string name="descriptionWarning">Description needed!</string>
+    <string name="dateWarning">Select a date!</string>
+    <string-array name="emoji_array">
+        <item>❤</item>
+        <item>🎂</item>
+        <item>📚</item>
+    </string-array>
+    <string name="emojiExample">❤</string>
+    <string name="logo">logo</string>
+    <string name="time_left">Time Left</string>
+    <string name="delete">Delete</string>
+    <string name="selected_date">Selected Date</string>
+    <string name="finished">Finished!</string>
+    <string name="day">day(s)!</string>
+    <string name="full_date">Full Date</string>
+    <string name="emoji">Emoji</string>
+</resources>

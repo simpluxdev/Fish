@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Fish</string>
+    <string name="description">Açıklama</string>
+    <string name="select_date">Tarih Seçiniz</string>
+    <string name="save">Kaydet</string>
+    <string name="descriptionWarning">Açıklama alanı boş bırakılamaz!</string>
+    <string name="dateWarning">Lütfen bir tarih seçiniz!</string>
+    <string-array name="emoji_array">
+        <item>❤</item>
+        <item>🎂</item>
+        <item>📚</item>
+    </string-array>
+    <string name="emojiExample">❤</string>
+    <string name="logo">logo</string>
+    <string name="time_left">Kalan Süre</string>
+    <string name="delete">Sil</string>
+    <string name="selected_date">Seçilen Tarih</string>
+    <string name="finished">Bitti!</string>
+    <string name="day">gün!</string>
+    <string name="full_date">Tam Tarih</string>
+    <string name="emoji">Emoji</string>
+</resources>
