@@ -12,5 +12,4 @@
         android:layout_height="40dp"
         app:srcCompat="@drawable/logo"
         android:contentDescription="@string/logo" />
-
 </com.google.android.material.appbar.MaterialToolbar>

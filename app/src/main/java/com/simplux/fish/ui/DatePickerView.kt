@@ -8,9 +8,7 @@ import com.simplux.fish.viewmodel.DatePickerData
 import com.simplux.fish.viewmodel.SaveViewModel
 import java.util.*
 import java.util.concurrent.TimeUnit
-
 class DatePickerView(private val saveViewModel: SaveViewModel): DialogFragment() {
-
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)

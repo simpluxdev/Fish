@@ -4,15 +4,12 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-
 @Database(entities = [DateCard::class],version = 1, exportSchema = false)
 abstract class DateCardDatabase: RoomDatabase() {
     abstract val dateCardDao: DateCardDao
-
     companion object {
         @Volatile
         private var INSTANCE: DateCardDatabase? = null
-
         fun getInstance(context: Context): DateCardDatabase {
             synchronized(this@Companion) {
                 var instance = INSTANCE

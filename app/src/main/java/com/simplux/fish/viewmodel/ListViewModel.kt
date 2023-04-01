@@ -12,11 +12,9 @@ import kotlinx.coroutines.launch
 import java.text.DateFormat
 import java.util.*
 import java.util.concurrent.TimeUnit
-
 @SuppressLint("StaticFieldLeak")
 class ListViewModel(private val dateCardDao: DateCardDao, private val context: Context): ViewModel() {
     val dateCards = dateCardDao.dateCards()
-
     fun calculateTimeLeft(dateCardDate: Long): String {
 
         val calendar = Calendar.getInstance()
@@ -29,21 +27,15 @@ class ListViewModel(private val dateCardDao: DateCardDao, private val context: C
         val remaining = dateCardDate - currentDate
 
         return if(TimeUnit.MILLISECONDS.toDays(remaining) <= 0) {
-
             context.getString(R.string.finished)
-
         } else {
-
             val left = TimeUnit.MILLISECONDS.toDays(remaining).toString()
             return "$left ${context.getString(R.string.day)}"
-
         }
     }
-
     fun showFullDate(dateCardDate: Long): String {
         return DateFormat.getDateInstance(DateFormat.FULL).format(dateCardDate)
     }
-
     fun removeDateCard(dateCard: DateCard) {
         viewModelScope.launch {
             dateCardDao.deleteDateCard(dateCard)

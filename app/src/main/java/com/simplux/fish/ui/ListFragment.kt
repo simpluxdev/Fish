@@ -14,12 +14,9 @@ import com.simplux.fish.model.DateCardDatabase
 import com.simplux.fish.viewmodel.ListViewModel
 import com.simplux.fish.viewmodel.ListViewModelFactory
 import com.simplux.fish.viewmodel.SaveViewModel
-
 class ListFragment : Fragment() {
-
     private var _binding: FragmentListBinding? = null
     private val binding get() = _binding!!
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         _binding = FragmentListBinding.inflate(layoutInflater,container,false)
@@ -38,9 +35,9 @@ class ListFragment : Fragment() {
         listViewModel.dateCards.observe(viewLifecycleOwner) {
             dateCardAdapter.submitList(it)
         }
+
         return view
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

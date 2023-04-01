@@ -13,13 +13,9 @@ import com.simplux.fish.databinding.FragmentSaveBinding
 import com.simplux.fish.model.DateCardDatabase
 import com.simplux.fish.viewmodel.SaveViewModel
 import com.simplux.fish.viewmodel.SaveViewModelFactory
-
-
 class SaveFragment : Fragment() {
-
     private var _binding: FragmentSaveBinding? = null
     private val binding get() = _binding!!
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         _binding = FragmentSaveBinding.inflate(layoutInflater,container,false)
@@ -27,7 +23,6 @@ class SaveFragment : Fragment() {
 
         val application = requireNotNull(this@SaveFragment.activity).application
         val dateCardDao = DateCardDatabase.getInstance(application).dateCardDao
-
         val saveViewModelFactory = SaveViewModelFactory(dateCardDao)
         val saveViewModel = ViewModelProvider(this@SaveFragment,saveViewModelFactory)[SaveViewModel::class.java]
 
@@ -65,7 +60,6 @@ class SaveFragment : Fragment() {
 
         return view
     }
-
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
